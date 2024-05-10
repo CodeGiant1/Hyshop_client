@@ -1,10 +1,6 @@
 import React from 'react';
-import { Layout } from '../../components/Layouts/Layout';
+import { Layout } from '../../components/Layouts/Layout.tsx';
 
 export const Dashboard = () => {
-  return (
-    <Layout>
-      <div>Dashboard</div>;
-    </Layout>
-  );
+  return <h1>Dashboard</h1>;
 };

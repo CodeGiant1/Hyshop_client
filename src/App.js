@@ -1,7 +1,15 @@
 import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Dashboard } from './pages/Dashboard/Dashboard.tsx';
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Dashboard />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
